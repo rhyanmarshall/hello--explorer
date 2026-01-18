@@ -1,4 +1,68 @@
 /* Add screen styles below */
-a.active {
-    font-weight: bold;
+body {
+  font-family: sans-serif;
+  background-color: #e0e1dd;
+  color: #222E50;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    padding: 16px 32px;
+}
+
+h1 {
+    color: #222E50;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+p {
+    color: #2C3D55;
+    line-height: 1.6;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.planet-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;}
+
+.planet-link {
+    text-align: center;
+    text-decoration: none;
+    color: #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.planet-link img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0;
+    opacity: 0.6;
+}
+
+.planet-link.active {
+  color: #222E50;
+  border: 2px solid #84828F;
+  font-weight: bold;
+}
+
+.planet-link.active img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: #222E50;
+  font-size: 0.9rem;
 }
